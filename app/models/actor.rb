@@ -14,7 +14,7 @@ class Actor < ActiveRecord::Base
   end
 
   def self.say_that_thing_you_say
-    self.
+    self.catchphrase 
   end
 
 end
