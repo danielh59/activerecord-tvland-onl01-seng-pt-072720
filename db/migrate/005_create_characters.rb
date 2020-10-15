@@ -4,5 +4,6 @@ class Createcharacters < ActiveRecord::Migration[5.1]
       c.string :name
       c.integer :actor_id
       c.integer :show_id
+    end
   end
 end
