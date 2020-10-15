@@ -4,7 +4,8 @@ class Show < ActiveRecord::Base
   belongs_to :network
 
   def actors_list
-     self.actors
+     self.actors.map |name|
+     "#{name.first_name} #{name.last_name}"
   end
 
 end
